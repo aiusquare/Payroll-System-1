@@ -8,6 +8,7 @@ public class Main {
 		int option;
 		EmployeeRecordList empRecList = EmployeeRecordList.Add();
 		Scanner sc = new Scanner(System.in);
+		System.out.println();
 		System.out.println("\t\tHello Welcome to JRG ");
 		System.out.println("(1.) Register Emp &&  (2.)Get Total Weekly GrossIncome");
 		System.out.print("Choose Action to start !(type 1 , 2 ) : ");
@@ -21,9 +22,13 @@ public class Main {
 
 		case 1:
 			System.out.println("Register employee is running...");
+			System.out.println();
 
 			try {
-
+				/**
+				 * <code>
+				 * </code>
+				 * */
 				empRecList.getInformation();
 				empRecList.saveInfo(empRecList);
 				empRecList.displayInfo();
